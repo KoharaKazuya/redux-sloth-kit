@@ -1,0 +1,83 @@
+{
+  "name": "redux-sloth-kit",
+  "description": "Dear sloth, this is a Redux and TypeScript friendly tool.",
+  "version": "0.0.0",
+  "author": "KoharaKazuya <reflect.results@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/KoharaKazuya/redux-sloth-kit/issues"
+  },
+  "dependencies": {
+    "immer": "^5.0.0",
+    "redux": "^4.0.4"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "@typescript-eslint/eslint-plugin": "^2.0.0",
+    "@typescript-eslint/parser": "^2.0.0",
+    "eslint": "^6.2.2",
+    "eslint-config-prettier": "^6.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "jest": "^24.9.0",
+    "lerna": "^3.16.4",
+    "microbundle": "^0.12.0-next.6",
+    "prettier": "^1.18.2",
+    "ts-jest": "^24.0.2",
+    "typescript": "~3.5.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:@typescript-eslint/eslint-recommended",
+      "plugin:prettier/recommended",
+      "prettier/@typescript-eslint"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "sourceType": "module"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "rules": {
+      "@typescript-eslint/no-unused-vars": [
+        "warn",
+        {
+          "args": "none"
+        }
+      ],
+      "@typescript-eslint/no-explicit-any": "off",
+      "@typescript-eslint/explicit-function-return-type": "off"
+    }
+  },
+  "homepage": "https://github.com/KoharaKazuya/redux-sloth-kit",
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "keywords": [
+    "redux",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.module.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/KoharaKazuya/redux-sloth-kit.git"
+  },
+  "scripts": {
+    "build": "microbundle",
+    "lint": "eslint --ext .js,.ts ./src",
+    "test": "jest",
+    "test:dev": "jest --watch"
+  },
+  "sideEffects": false,
+  "source": "src/index.ts",
+  "types": "dist/index.d.ts",
+  "umd:main": "dist/index.umd.js"
+}
