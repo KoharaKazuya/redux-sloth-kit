@@ -54,6 +54,10 @@
       "@typescript-eslint/explicit-function-return-type": "off"
     }
   },
+  "files": [
+    "src",
+    "dist"
+  ],
   "homepage": "https://github.com/KoharaKazuya/redux-sloth-kit",
   "jest": {
     "preset": "ts-jest",
