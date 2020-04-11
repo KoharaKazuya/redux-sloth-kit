@@ -1,3 +1,9 @@
+# NO LONGER MAINTAINED
+
+Use [Redux Toolkit](https://redux-toolkit.js.org/).
+
+---
+
 # redux-sloth-kit
 
 Dear sloth, this is a Redux and TypeScript friendly tool.
